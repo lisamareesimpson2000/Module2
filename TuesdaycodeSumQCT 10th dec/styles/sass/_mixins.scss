@@ -1,0 +1,18 @@
+@mixin mainButton($w, $h, $bc, $ff, $fs, $c, $m, $ta) {
+	background-color: $bc;
+	margin: $m;
+	width: $w;
+	height: $h;
+	color: $c;
+	font-family: $ff;
+	font-size: $fs;
+	text-align: $ta;
+}
+
+@mixin dropDown($w, $h, $ff, $c, $sw) {
+	width: $w;
+	height: $h;
+	font-family: $ff;
+	color: $c;
+	stroke-width: $sw;
+}

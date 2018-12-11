@@ -1,0 +1,49 @@
+	.cont__tripCost{
+	font-family: $heading;
+	color: $pink;
+	font-size: 2em;
+	padding-top: 10px;
+	}
+	.row__p--tripOverview{
+	font-family: $mainf;
+	color: $dark;
+	font-size: 1.2em;
+	}
+	.cont__i--map{
+	font-family: $mainf;
+	color: $dark;
+	font-size: 1.1em;
+	text-align: center;
+	}
+
+	/*google map style*/
+	#map {
+    height: 400px;  /* The height is 400 pixels */
+    width: 90%; 
+    margin: auto;
+    /* The width is the width of the web page */
+    }
+	#p__ph{
+		text-align: center;
+	}
+	.callModal{
+	display: none;
+	position: absolute;
+	bottom: 30%;
+	left: 30%;
+	width: 80%;
+	}
+@media only screen and (max-width: 600px) {
+	/* ACCOMODATION SLIDER */
+
+}
+@media only screen and (min-width: 992px) {
+
+	.callModal{
+	display: none;
+	position: absolute;
+	bottom: 30%;
+	left: 30%;
+	width: 50%;
+	}
+}

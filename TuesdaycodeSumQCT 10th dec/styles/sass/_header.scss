@@ -1,0 +1,204 @@
+/*@media only screen and (max-width: 600px) {*/
+	/*HEADER*/
+
+	.header{
+	background-color: $white;
+	}
+	.pointer {cursor: pointer;
+	}
+	.cont__img--qtMobile{
+	width: 100%;
+	display: block;
+
+	}
+
+    .cont__img--qtDesktop{
+	display: none;	
+	}
+
+	.header__h1{
+	color: $white;
+	font-family: $heading;
+	font-size: 10vw; 
+	position: absolute;
+	bottom: 20%;
+
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+
+	}
+	.header__h2{
+	color: $dark;
+	font-family: 'Indie Flower', cursive;
+	font-size: 1.4em;
+	margin-bottom: 0;
+	text-align: center;
+	padding-top: 30px;
+	}
+	.header__button--h3 {
+	@include mainButton(204px, 51px, $pink, $mainf, 1.2em, $white, 0 auto, center);
+	position: absolute;
+	bottom: 69%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	}
+	.cont__info{
+	color: $white;
+	font-family: asap;
+	font-size: 1em;
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    background-color: transparent;
+    border: none;
+	}
+
+	/*MODAL INFO*/
+	.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+
+	/* Modal Content */
+	.modal-content {
+	background-color: $dark;
+	font-family: asap;
+	font-size: 1em;
+	color: white;
+	margin: auto;
+	padding: 20px;
+	border: 1px solid #888;
+	width: 80%;
+	}
+
+	/* The Close Button */
+	.close {
+	    color: $white;
+	    float: right;
+	    font-size: 28px;
+	    font-weight: bold;
+	    cursor: pointer;
+	}
+	/*END OF MODAL */
+
+	.close:hover,
+	.close:focus {
+	    color: #000;
+	    text-decoration: none;
+	    cursor: pointer;
+}
+
+	.cont__block{
+		background-color: $dark;
+		width: 100%;
+		height: 20px;
+	}
+
+	.card {
+	background-color: $dark;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 100%;
+}
+/*.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}*/
+
+
+
+	.modal-body{
+		background-color: white;
+		width: 100%;
+	}
+	.modal-title{
+		font-family: $heading;
+	}
+	.modal__info{
+		font-family: $mainf;
+	}
+	.header__cont--logo {
+    position: relative;
+    text-align: center;
+    color: white;
+    margin: 0px;
+	}
+	.header__img--logo{
+		position: relative;
+		width: 80%;
+		margin: auto;
+		text-align: center;
+
+	}
+
+/*}*/
+@media only screen and (min-width: 600px) {
+    .cont__img--qtDesktop{
+	width: 100%;
+	display: block;	
+	}
+	.cont__img--qtMobile{
+	display: none;
+	}
+	.header__h1 {
+    font-size: 5vw;
+    padding-bottom: 50px;
+	}
+	.header__button--h3 {
+	bottom: 25%;
+	}
+	.cont__info {
+    font-size: 1.2em;
+    top: 70px;
+    right: 100px;
+	}
+	.header__h2 {
+    font-size: 2em;
+	}
+	.header__img--logo {
+     width: 50%; 
+	}
+	.header__button--h3 {
+	@include mainButton(204px, 51px, $pink, $mainf, 1.2em, $white, 0 auto, center);
+	position: absolute;
+	bottom: 65%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	}
+
+}
+@media only screen and (min-width: 992px) {
+	.cont__img--qtDesktop{
+	display: block;	
+	width: 100%
+	}
+
+	.header__h1 {
+    font-size: 4.5vw;
+    padding-bottom: 120px;
+	}
+	.header__button--h3 {
+	bottom: 25%;
+	}
+	.cont__info {
+    font-size: 1.2em;
+    top: 70px;
+    right: 100px;
+	}
+	.header__h2 {
+    font-size: 2em;
+	}
+	.header__img--logo {
+     width: 35%; 
+	}
+} 
