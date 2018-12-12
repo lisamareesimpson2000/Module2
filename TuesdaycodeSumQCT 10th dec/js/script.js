@@ -27,7 +27,6 @@ $("#fourthPage").hide();
             scrollTop: $("#secondPage").offset().top
          }, 1000);
     });
-
       
     $(".header__button--accomm").click(function(){
       $("#fourthPage").show();
@@ -36,7 +35,6 @@ $("#fourthPage").hide();
             scrollTop: $("#fourthPage").offset().top
          }, 1000);
     });
-
 
     $(".btn__strtO").click(function(){
       $("#firstPage").show();
@@ -48,24 +46,14 @@ $("#fourthPage").hide();
          }, 1000);
     });
 
-
-
  $("#map").hide();
 
 });
 
-
-
-//Modal - Info
-
-// Get the modal
-
+//Modal - INFO
 
 // Get the button that opens the modal
 var btn = document.getElementById("cont__info");
-
-// Get the <span> element that closes the modal
-
 
 // When the user clicks the button, open the modal 
 function modal__info() {
@@ -88,9 +76,6 @@ window.onclick = function close__outSide(event) {
 };
 
 //MODAL - CALL FOR BOOKING
-
-  // Get the modal
-  
 
   // Get the button that opens the modal
   var callBtn = document.getElementById("phNumber");
@@ -116,103 +101,6 @@ window.onclick = function close__outSide(event) {
           callModal.style.display = "none";
       }
   };
-//GOOGLE MAPS MODAL
-
-  // function viewMap() {
-  //     // Get the modal
-  //   var callModal = document.getElementById('callModal');
-
-  //   // Get the button that opens the modal
-  //   var callBtn = document.getElementById("phNumber");
-
-  //   // Get the <span> element that closes the modal
-  //   var close = document.getElementsByClassName("close")[0];
-
-  //   // When the user clicks the button, open the modal 
-  //   function secure__booking() {
-  //       callModal.style.display = "block";
-  //   }
-
-  //   // When the user clicks on <span> (x), close the modal
-  //   function booking__close() {
-  //       callModal.style.display = "none";
-  //   }
-
-  //   // When the user clicks anywhere outside of the modal, close it
-  //   window.onclick = function close__outSide(event) {
-  //       if (event.target == callModal) {
-  //           callModal.style.display = "none";
-  //       }
-  //   }
-  // }
-
-//PAGE PILER
-// $(document).ready(function() {
-//   $('#pagepiling').pagepiling();
-// });
-
-// $('#pagepiling').pagepiling({
-//     anchors: ['firstPage', 'secondPage', 'thirdPage', 'fourthPage'],
-//     menu: '#myMenu'
-// });
-
-// $(document).ready(function() {
-//   $('#pagepiling').pagepiling({
-//       menu: null,
-//         direction: 'vertical',
-//         verticalCentered: true,
-//         sectionsColor: [],
-//         anchors: [],
-//         scrollingSpeed: 700,
-//         easing: 'swing',
-//         loopBottom: false,
-//         loopTop: false,
-//         css3: true,
-//         navigation: {
-//             'textColor': '#000',
-//             'bulletsColor': '#000',
-//             'position': 'right',
-//             'tooltips': ['section1', 'section2', 'section3', 'lastPage']
-//         },
-//         normalScrollElements: null,
-//         normalScrollElementTouchThreshold: 5,
-//         touchSensitivity: 5,
-//         keyboardScrolling: true,
-//         sectionSelector: '.section',
-//         animateAnchor: false,
-
-//     //events
-//     onLeave: function(index, nextIndex, direction){},
-//     afterLoad: function(anchorLink, index){},
-//     afterRender: function(){},
-//   });
-// });
-
-// $('#pagepiling').pagepiling({
-//     sectionsColor: ['#ffffff', '#ffffff', '#ffffff', '#ffffff', '#ffffff'],
-// });
-
-  // $('#pagepiling').pagepiling({
-  //   anchors: ['firstPage', 'secondPage', 'thirdPage', 'fourthPage'],
-
-  //   afterLoad: function(anchorLink, index){
-  //     //using index
-  //     if(index == 3){
-  //       alert("Section 3 ended loading");
-  //     }
-
-  //     //using anchorLink
-  //     if(anchorLink == 'secondPage'){
-  //       alert("Section 2 ended loading");
-  //     }
-  //   }
-  // });
-
-// $.fn.pagepiling.setAllowScrolling(false);
-// $('#pagepiling').pagepiling({
-//     anchors: ['firstPage', 'secondPage', 'thirdPage', 'fourthPage', 'lastPage'],
-//     menu: '#myMenu'
-// });
 
 //Find the number of days between dates
   var guests, days;
@@ -228,14 +116,13 @@ window.onclick = function close__outSide(event) {
     document.getElementById("p__myTrip--nights").innerHTML =  days + " nights!";
     return days;
   } else {
-    alert ("Please enter dates!");
+    Swal ("Please enter check in and check out dates!");
   }
 
   }
- // }); 
 
     
-  // TRIP OVERVIEW - COST
+  // TRIP OVERVIEW - COST AND MEALS
   // console.log(days);
   var price, mealsCost, place;
   function displayFur(){
@@ -482,7 +369,7 @@ function filterAccom(){
     $("#house").show();
   }
 } else {
-  alert("Please enter dates!")
+  Swal("Check in and check out dates must be selected to continue!");
        $("#secondPage").show();
       $("#thirdPage").hide();
      
@@ -493,25 +380,10 @@ function filterAccom(){
 //This hide and shows the map
 $(document).ready(function(){
    $("#viewMap").click(function(){
-    //.cont__i--map
 $("#map").toggle();
 });
    });
-/*$(document).ready(function(){
-   $("#map__bas").click(function(){
-$("#map2").toggle();
-});
-   });
-$(document).ready(function(){
-   $("#map__loc").click(function(){
-$("#map3").toggle();
-});
-   });
-$(document).ready(function(){
-   $("#map__por").click(function(){
-$("#map4").toggle();
-});*/
-   // });
+
 
 // GOOGLE MAPS
 
@@ -584,26 +456,17 @@ var accommodation = [
   // The map, centered at Wellington
   var map = new google.maps.Map(
       document.getElementById('map'), {zoom: 12, center: marlborough});
-      // document.getElementById('map2'), {zoom: 4, center: wellington};
-      // document.getElementById('map3'), {zoom: 4, center: wellington};
-      // document.getElementById('map4'), {zoom: 4, center: wellington};
       console.log(map);
   // The marker, positioned at queen charlotte accommodation
  for (var i=0; i < accommodation.length; i++) {
     console.log(place);
     // document.getElementsByClassName('map'), {zoom: 12, center: marlborough};
-    //     // console.log(map);
-    // document.getElementById('map2'), {zoom: 4, center: wellington};
-    // document.getElementById('map3'), {zoom: 4, center: wellington};
-    // document.getElementById('map4'), {zoom: 4, center: wellington};
+    // console.log(map);
     if (place == accommodation[i].name) {
    var marker = new google.maps.Marker({position: {lat: accommodation[i].lat  , lng:  accommodation[i].lng }, map: map});
    }
   }
 }
-
-
-
 
 // DATE PICKER
   $( function() {
@@ -635,12 +498,13 @@ var accommodation = [
   } );
 
   //GENERATE A RANDOM NUMBER
-
-  function test() {
-  var min = 1;
-  var max = 9999999999;
-  var num = Math.floor(Math.random() * (max - min + 1)) + min;
-  var timeNow = new Date().getTime();
-  document.getElementById('field10').value = num + '_' + timeNow;
+function referenceNo() {
+      var x = document.getElementById("p__randomNo");
+    x.innerHTML = Math.floor((Math.random() * 10000) + 1);
 }
-window.onload = test;
+
+
+
+
+
+

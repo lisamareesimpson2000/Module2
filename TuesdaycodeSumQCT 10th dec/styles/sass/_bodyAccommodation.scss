@@ -1,25 +1,24 @@
 	/* ACCOMODATION SLIDER */
 	#cont__block--accomm1{
-		width: 100%;
-		height: auto;
-		background-color: $turq;
+	width: 100%;
+	height: auto;
+	background-color: $turq;
 	}
-		#cont__block--accomm2{
-		width: 100%;
-		height: auto;
-		background-color: #76daff;
+	#cont__block--accomm2{
+	width: 100%;
+	height: auto;
+	background-color: #76daff;
 	}
-		#cont__block--accomm3{
-		width: 100%;
-		height: auto;
-		background-color: #4ec7c4;
+	#cont__block--accomm3{
+	width: 100%;
+	height: auto;
+	background-color: #4ec7c4;
 	}
-		#cont__block--accomm4{
-		width: 100%;
-		height: auto;
-		background-color: #007c92;
+	#cont__block--accomm4{
+	width: 100%;
+	height: auto;
+	background-color: #007c92;
 	}
-
 	.cont__heading--accomm{
 	font-family: $heading;
 	color: $dark;
@@ -32,7 +31,7 @@
 	font-size: 1.3em;
 	}
 	#fa-map-marker-alt{
-		font-size: 2em;
+	font-size: 2em;
 	}
 	.cont__accomm--addy{
 	font-family: $mainf;
@@ -45,10 +44,8 @@
 	margin-bottom: 20px; 
 	}
 	.img-fluid{
-		max-width: 100%;
+	max-width: 100%;
 		height: auto;
-/*	margin: auto;
-	text-align: center;*/
 	}
 	.img-thumbnail {
     padding: 0px;
@@ -72,19 +69,8 @@
 /*Large devices (desktops, 992px and up)*/
 @media only screen and (min-width: 992px) {
 	.column{
-/*	width: 50%;
-	height: auto;*/
-
 	margin:auto; 
 	}
-/*	.img-fluid{
-	max-width: 100%;
-	height: auto;
-
-	}
-	.img-fluid{
-	clear: right;
-	}*/
 	.img-thumbnail{
 	width: 40%;
 	height:auto;
@@ -97,16 +83,12 @@
 
 /* Extra large devices (large desktops, 1200px and up)*/
 @media (min-width: 1200px) { 
-
 	.column{
 	width: 50%;
 	height: auto;
-
 	margin-left: auto; 
 	}
-
-
-
-
-
 };
+
+
+

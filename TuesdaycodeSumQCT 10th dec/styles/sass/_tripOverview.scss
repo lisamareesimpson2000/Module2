@@ -15,7 +15,6 @@
 	font-size: 1.1em;
 	text-align: center;
 	}
-
 	/*google map style*/
 	#map {
     height: 400px;  /* The height is 400 pixels */
@@ -29,8 +28,8 @@
 	.callModal{
 	display: none;
 	position: absolute;
-	bottom: 30%;
-	left: 30%;
+	bottom: 60%;
+	left: 10%;
 	width: 80%;
 	}
 @media only screen and (max-width: 600px) {
@@ -42,8 +41,12 @@
 	.callModal{
 	display: none;
 	position: absolute;
-	bottom: 30%;
-	left: 30%;
+	bottom: 60%;
+	left: 25%;
 	width: 50%;
+	}
+	.modal-content {
+	width: 50%;
+
 	}
 }
